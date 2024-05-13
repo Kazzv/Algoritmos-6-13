@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main (void) {
+    int num, primo, contadorR;
+   contadorR = 0;
+
+    printf ("Ingrese un numero para saber si es primo o no: \n");
+    scanf ("%d", &num);
+
+for (int i = num; i > 0; i--) {
+    primo = num % i;
+    if (primo == 0) {
+        contadorR++;
+    }
+}
+if (contadorR == 2) {
+    printf ("Es primo.");
+} else {
+    printf ("No es primo.");
+}
+    return 0;
+}
