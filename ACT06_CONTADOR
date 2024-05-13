@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num, contador;
+
+    printf("Ingrese una serie de números enteros. Ingrese 0 para terminar.\n");
+
+    do {
+        printf("Ingrese un número: ");
+        scanf("%d", &num);
+
+        if (num > 0) {
+            contador++;
+        }
+    } while (num!= 0);
+
+    printf("Cantidad de números positivos ingresados: %d\n", contador);
+
+    return 0;
+}
