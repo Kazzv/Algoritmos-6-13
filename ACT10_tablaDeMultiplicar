@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main (void) {
+    int i, num, tabla;
+
+    printf ("Ingrese un numero para mostrar su tabla: \n");
+    scanf ("%d", &num);
+
+    for (i = 1; i <= 10; i++) {
+        tabla = i * num;
+        printf ("%d x %d = %d\n", i, num, tabla);
+}
+    return 0;
+}
