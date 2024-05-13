@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main (void) {
+    int num, fact;
+    fact = 1;
+
+    printf ("Ingrese un numero para obtener su factorial: \n");
+    scanf ("%d", &num);
+
+    fact = num;
+
+    for (int i = num-1; i > 0; i--) {
+        printf ("%d x %d\n", fact, i);
+        fact = fact * i; 
+    }
+    printf ("El factorial es: %d", fact);
+    return 0;
+}
