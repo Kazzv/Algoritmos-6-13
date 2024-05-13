@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (void) {
+    int intentos;
+    char contra[20], usuario[20], contracorrecta[20];
+    intentos = 3;
+
+contracorrecta == ("weysupersi");
+
+while (intentos > 0) {
+    printf ("Ingrese la contraseña '%d' intentos restantes: \n", intentos);
+    scanf ("%s", &contra);
+
+    if (strcmp (contra, "weysupersi") == 0) {
+        printf ("Bienvenido.");
+        intentos = 0;
+    } else {
+            printf ("La contraseña es incorrecta, favor de ingresar la contraseña correcta: \n");
+            intentos--;
+    }   
+}
+    return 0;
+}
