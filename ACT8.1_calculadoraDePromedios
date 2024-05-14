@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main (void) {
+    int sumatoria, cantidad;
+    float promedio, contador, notas;
+    contador = 0;
+    printf ("Ingrese el total de notas que va a promediar: ");
+    scanf ("%f", &notas);
+    cantidad = notas;
+    
+    while (cantidad > 0) {
+        printf ("Ingrese las notas para obtener el promedio: \n");
+        scanf ("%d", &sumatoria);
+
+        if (sumatoria <= 10 && cantidad > 0) {
+        cantidad--;
+        contador = contador + sumatoria; 
+        }
+        }
+        promedio = contador / notas;
+        printf ("El promedio de sus notas es: %.2f\n", promedio);
+
+    return 0;
+}
