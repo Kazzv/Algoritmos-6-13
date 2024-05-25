@@ -1,0 +1,28 @@
+#include <stdio.h>
+int contadorPrimos;
+void primos(int num) {
+  int contador = 0;
+  for (int i = 1; i <= num; i++) {
+    if (num % i == 0) {
+      contador++;
+    }
+  }
+  if (contador == 2) {
+    printf ("El numero %d es primo\n", num);
+    contadorPrimos++;
+  }
+}
+int main(void) {
+  int num;
+  contadorPrimos = 0;
+  printf ("Ingrese un numero: \n");
+  scanf ("%d", &num);
+
+  for (int i = 1; i <= num; i++) {
+    primos(i);
+  }
+
+  printf ("En total hay %d numeros primos.", contadorPrimos);
+
+  return 0;
+}
