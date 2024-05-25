@@ -1,0 +1,29 @@
+#include <stdio.h>
+void esPrimo (int num) {
+    int contador, contadorR;
+    contador = 0;
+
+    for (int i = 1; i <= num; ++i) {
+        contadorR = num % i;
+        if (contadorR == 0) {
+            contador++;
+        }
+    }
+
+    if (contador == 2) {
+        printf ("El numero es primo.");
+    } else {
+        printf ("El numero no es primo.");
+    }
+}
+int main (void) {
+    int num;
+
+    printf("Ingrese un numero:\n");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= num; i++) {
+    } esPrimo(num);
+    
+return 0;
+}
